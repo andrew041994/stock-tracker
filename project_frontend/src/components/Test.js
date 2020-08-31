@@ -4,6 +4,7 @@ export default class test extends Component {
 
 handleClick = (e) => {
     e.preventDefault()
+    
 }
 
 
@@ -14,7 +15,7 @@ handleClick = (e) => {
       "padding": "10px",
       "color": "white"}}> 
           
-          <button> press here for action</button>
+          <button onClick={(e) => this.handleClick(e)}> press here for action</button>
      </div>
     );
   }
