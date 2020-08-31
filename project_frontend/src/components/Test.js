@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 export default class test extends Component {
+
+handleClick = (e) => {
+    e.preventDefault()
+}
+
+
   render() {
     return (
       <div style={{"margin": "auto",
