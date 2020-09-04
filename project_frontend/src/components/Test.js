@@ -30,6 +30,9 @@ handleClick = (e) => {
             <input id="password" name="password" type="password" value={this.state.password} onChange={event => this.handlePassword(event)} />
           </label>
         </div>
+        <div>
+          <button type="submit">Log in</button>
+        </div>
           </form>
      </div>
     );
