@@ -16,6 +16,12 @@ handleClick = (e) => {
       "color": "white"}}> 
           
           <button onClick={(e) => this.handleClick(e)}> press here for action</button>
+          <form>
+          <label>
+            Username
+            <input id="username" name="username" type="text" value={this.state.username} onChange={event => this.handleUsername(event)}/>
+          </label>
+          </form>
      </div>
     );
   }
