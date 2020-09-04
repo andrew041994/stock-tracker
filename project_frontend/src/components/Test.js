@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 
 export default class test extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      username: "",
+      password: ""
+    }
+  }
+
 handleClick = (e) => {
     e.preventDefault()
     
