@@ -7,8 +7,20 @@ export default class test extends Component {
     this.state = {
       username: "",
       password: ""
-    }
+    };
   }
+
+  handleUsername = event => {
+    this.setState({
+      username: event.target.value
+    })
+  }
+
+  handlePassword = event => {
+      this.setState({
+        password: event.target.value
+      })
+    }
 
 handleClick = (e) => {
     e.preventDefault()
