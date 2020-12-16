@@ -12,11 +12,12 @@ class StockForm extends Component {
 			purchasePrice: 0.0,
 			sellingPrice: 0.0,
 		};
+		this.handleSubmit = this.handleSubmit.bind(this);
+
 	}
 
 	// This binding is necessary to make `this` work in the callback
-	// this.handleClick = this.handleClick.bind(this);
-
+	
 	handleSubmit(event) {
 		event.preventDefault();
 		this.props.sendStock(this.state);

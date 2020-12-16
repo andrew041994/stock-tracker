@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ViewAll from '../components/ViewAll'
 import TrendingStock from '../components/TrendingStock'
 import {Row, Col} from 'react-bootstrap'
-// import {Container} from 'react-bootstrap'
+import Container from 'react-bootstrap'
 
 
 
@@ -14,7 +14,7 @@ class HomeContainer extends Component {
     render() {
         return(
             <div  style={{"padding": "30px"}} >
-                {/* <Container fluid> */}
+                
                 
                 <Row>
                     <Col lg={{ span: 3, offset: 4 }} > <h3 style={{"margin": "auto", "width": "130%", "padding": "8px",
@@ -31,7 +31,7 @@ class HomeContainer extends Component {
                 </Row>
                 
                
-                {/* </Container> */}
+             
                
               
             </div>
